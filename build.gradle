@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'com.srcclr.gradle'
+
+buildscript {
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "gradle.plugin.com.srcclr:gradle:2.0.1"
+  }
+}
+	
+jar {
+    manifest {
+        attributes 'Main-Class': 'net.petrikainulainen.gradle.HelloWorld'
+    }
+}
+
+srcclr {
+  apiToken = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzEwMCwiZXhwIjoxNDk3MDA0NDMwLCJhdXRob3JpdGllcyI6IkFHRU5UIiwianRpIjoiZTBhMjM0NmMtN2QxNC00ZmI3LTk4OGMtZWQyYzVmOTgyZGU0IiwiY2xpZW50X2lkIjoiIiwic2NvcGUiOltdfQ.eSDSezcmsIwYo5zjSCTr3fwOAyYlDUj0QI8GjYHNIn8m4DT99PM7NitakhN5OIFnNZX6URCZG3E4Vt6e_P1ngk5iz_qdGn4gyY_DpHtr7cdC1jstTo206tLWLSiSAKn9VtAIc1D_RNM9Or6cEjDtrN1FucsD4qDUr0dpKebLCpM' //Only required if environment variable is not set
+  //shouldUpload = 'false'
+  failureLevel = 'never'
+}
