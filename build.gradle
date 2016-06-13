@@ -14,7 +14,7 @@ buildscript {
 	
 jar {
     manifest {
-        attributes 'Main-Class': 'net.petrikainulainen.gradle.HelloWorld'
+        attributes 'Main-Class': 'com.test.Main'
     }
 }
 
