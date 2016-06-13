@@ -19,7 +19,7 @@ jar {
 }
 
 srcclr {
-  apiToken = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzEwMCwiZXhwIjoxNDk3MDA0NDMwLCJhdXRob3JpdGllcyI6IkFHRU5UIiwianRpIjoiZTBhMjM0NmMtN2QxNC00ZmI3LTk4OGMtZWQyYzVmOTgyZGU0IiwiY2xpZW50X2lkIjoiIiwic2NvcGUiOltdfQ.eSDSezcmsIwYo5zjSCTr3fwOAyYlDUj0QI8GjYHNIn8m4DT99PM7NitakhN5OIFnNZX6URCZG3E4Vt6e_P1ngk5iz_qdGn4gyY_DpHtr7cdC1jstTo206tLWLSiSAKn9VtAIc1D_RNM9Or6cEjDtrN1FucsD4qDUr0dpKebLCpM' //Only required if environment variable is not set
+  apiToken = '' //Only required if environment variable is not set
   //shouldUpload = 'false'
   failureLevel = 'never'
 }
